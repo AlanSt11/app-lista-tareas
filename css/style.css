@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* From uiverse.io by @EmmaxPlay */
+.card {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+input{
+    padding: .6rem 5rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+input::-webkit-input-placeholder {
+    color: #011522;
+    font-weight: bold;
+}
+
+button{
+    padding: .6rem 3rem;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #011522;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.task{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-content{
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.complete{
+    background-color: #08e425;
+}
+
+.text-task{
+    color: #000;
+    margin-left: 10px;
+}
+
+.buttons{
+    width: 110px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-delete,
+#btn-complete{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: hover;
+    background-color: #fff;
+    border: 1px solid #011522;
+}
+
+@media screen and (max-width: 610px) {
+    .card{
+        margin-top: 75%;
+    }
+}
